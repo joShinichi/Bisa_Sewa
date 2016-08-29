@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="1dp"
+        android:id="@+id/cardView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <com.example.jo_shinichi1.bisasewa.CircularNetworkImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivImage"
+                android:src="@drawable/quantaone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:text="gundam 00 quanta series"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="17dp"
+                android:layout_alignTop="@+id/ivImage"
+                android:layout_toRightOf="@+id/ivImage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="gundam@gmail.com"
+                android:id="@+id/tvEmail"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/tvName"
+                android:layout_alignStart="@+id/tvName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="089989878987"
+                android:id="@+id/tvNumber"
+                android:layout_below="@+id/tvEmail"
+                android:layout_alignLeft="@+id/tvEmail"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tab_favourite"
+                android:layout_alignTop="@+id/tvNumber"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
